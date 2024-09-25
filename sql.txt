@@ -1,0 +1,31 @@
++-----------------+--------------+------+-----+---------+----------------+
+| Field           | Type         | Null | Key | Default | Extra          |
++-----------------+--------------+------+-----+---------+----------------+
+| book_id         | int          | NO   | PRI | NULL    | auto_increment |
+| book_name       | varchar(32)  | YES  |     | NULL    |                |
+| book_isbn       | varchar(32)  | YES  |     | NULL    |                |
+| book_press      | varchar(32)  | YES  |     | NULL    |                |
+| book_author     | varchar(32)  | YES  |     | NULL    |                |
+| book_pagination | int          | YES  |     | NULL    |                |
+| book_price      | double(10,0) | YES  |     | NULL    |                |
+| book_uploadtime | varchar(32)  | YES  |     | NULL    |                |
+| book_status     | varchar(1)   | YES  |     | 0       |                |
+| book_borrower   | varchar(32)  | YES  |     | NULL    |                |
+| book_borrowtime | varchar(32)  | YES  |     | NULL    |                |
+| book_returntime | varchar(32)  | YES  |     | NULL    |                |
+| book_category   | varchar(255) | YES  |     | NULL    |                |
++-----------------+--------------+------+-----+---------+----------------+
+
+
+
++----------+----------------------+------+-----+---------+----------------+
+| Field    | Type                 | Null | Key | Default | Extra          |
++----------+----------------------+------+-----+---------+----------------+
+| id       | int                  | NO   | PRI | NULL    | auto_increment |
+| username | varchar(50)          | NO   | UNI | NULL    |                |
+| password | varchar(255)         | NO   |     | NULL    |                |
+| role     | enum('admin','user') | NO   |     | user    |                |
++----------+----------------------+------+-----+---------+----------------+
+
+
+

@@ -1,0 +1,139 @@
+/* pages/mine/mine.wxss */
+page{
+  background-color: rgb(219, 219, 219);
+}
+.pag{
+  background-color: #fff;
+}
+.write{
+  width: 6ex;
+  height: 4ex;
+  text-align: center;
+  line-height:4ex;
+  font-size: 32rpx;
+  position: absolute;
+  right: 20rpx;
+  top: 20rpx;
+  color: rgb(196, 23, 95);
+}
+.info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 64rpx;
+  padding-bottom: 32rpx;
+}
+.info image {
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 90rpx;
+}
+.userName{
+  margin-top: 26rpx;
+}
+.timMon{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 24rpx;
+}
+.timer,
+.money{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 32rpx;
+}
+.timer>text:nth-of-type(1),
+.money>text:nth-of-type(1){
+  font-weight: bolder;
+}
+.timer>text:nth-of-type(2),
+.money>text:nth-of-type(2){
+  color: rgb(168, 158, 158);
+}
+.line{
+  height: 40rpx;
+  border-left: 1rpx solid rgb(204, 200, 200);
+  margin-top: 20rpx;
+}
+.money{
+  position: relative;
+}
+.money::after{
+  content: '\e748';
+  font-size: 48rpx;
+  color:rgb(204, 200, 200) ;
+  position: absolute;
+  top: 20rpx;
+  right: 20rpx;
+}
+.bookManage{
+  margin-top: 32rpx;
+  background-color: #fff;
+}
+.manage,.release,.icon-share,.icon-ipad{
+  width: 100%;
+  height: 6ex;
+  line-height:6ex;
+  font-size: 32rpx;
+  font-weight: 500;
+  padding-left:32rpx;
+  text-align:left;
+}
+button{
+  margin-left: 0 !important;
+  background-color: #fff;
+}
+
+.manage::before{
+  content: '\e79f';
+  font-size: 40rpx;
+  margin-right: 10rpx;
+}
+.release::before{
+  content: '\e674';
+  margin-right: 10rpx;
+}
+.manage::after{
+  content: '\e748';
+  position: absolute;
+  font-size: 40rpx;
+  color:rgb(204, 200, 200);
+  right: 20rpx;
+}
+.release::after{
+  content: '\e748';
+  position: absolute;
+  font-size: 40rpx;
+  color:rgb(204, 200, 200);
+  right: 20rpx;
+}
+.icon-share::after{
+  content: '\e748';
+  position: absolute;
+  font-size: 40rpx;
+  color:rgb(204, 200, 200);
+  right: 20rpx;
+}
+.icon-share::before{
+ margin-right: 10rpx;
+}
+.icon-ipad::after{
+  content: '\e748';
+  position: absolute;
+  font-size: 40rpx;
+  color:rgb(204, 200, 200);
+  right: 20rpx;
+}
+.icon-ipad::before{
+  margin-right: 10rpx;
+ }
+ /* .login,.share,.contact{
+   background-color: #fff;
+   font-weight: 500;
+   font-size:32rpx ;
+   position: absolute;
+    left: -36px;
+ } */

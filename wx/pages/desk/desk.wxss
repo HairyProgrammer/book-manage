@@ -1,0 +1,40 @@
+/* 页面整体样式 */  
+.container {  
+  padding: 10px; /* 页面内边距 */  
+}  
+
+/* 书籍卡片样式 */  
+.book-card {  
+  width: 300px;  
+  height: auto; 
+  padding: 15px; 
+  background-color: #f9f9f9; 
+  border: 1px solid #ddd; 
+  border-radius: 4px; 
+  margin-bottom: 15px; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: flex-start; 
+  overflow: hidden; 
+}  
+
+/* 书籍标题样式 */  
+.book-title {  
+  font-size: 18px; /* 字体大小 */  
+  color: #333; /* 字体颜色 */  
+  margin-bottom: 10px; /* 底部边距 */  
+  cursor: pointer; /* 鼠标样式 */  
+}  
+
+/* 书籍信息样式 */  
+.book-info {  
+  font-size: 14px; /* 字体大小 */  
+  color: #666; /* 字体颜色 */  
+  margin-bottom: 5px; /* 底部边距 */  
+}  
+
+/* 添加悬停效果 */  
+.book-title:hover {  
+  text-decoration: underline; 
+  color: #007aff;  
+}

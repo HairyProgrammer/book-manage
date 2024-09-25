@@ -1,0 +1,130 @@
+/* pages/classify/classify.wxss */
+.cover{
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+}
+.res {  
+  width: 660rpx;  
+  height: 80rpx;  
+  background-color: rgb(209, 189, 189);  
+  color: rgb(26, 20, 20); 
+  line-height: 80rpx; 
+  text-align: center; 
+}
+.coverSearch{
+  width: 660rpx;
+  height: 80rpx;
+  border: 4rpx solid grey;
+  margin-top: 30rpx;
+  position: relative;
+  line-height: 80rpx;
+}
+.coverSearch>input{
+  width: 80%;
+  height: 80rpx;
+  color: grey;
+  margin-left: 10rpx;
+}
+.out{
+  position: absolute;
+  top: 0;
+  right: 20rpx;
+}
+.container{
+  width: 100%;
+}
+.heart{
+  /* 版心 */
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+.searchicon{
+  width: 600rpx;
+  height: 60rpx;
+  border-radius: 15rpx;
+  text-align: center;
+  line-height: 60rpx;
+  font-size: 32rpx;
+  color: rgb(136, 127, 127);
+  background-color: rgb(219, 209, 209);
+  position: absolute;
+  top: 20rpx;
+  left: 32rpx;
+}
+.scan{
+  position: absolute;
+  top:20rpx;
+  right: 56rpx;
+  font-size: 50rpx;
+}
+.newbook{
+  width: 100%;
+  position: absolute;
+  top:110rpx;
+  display: flex;
+  justify-content: space-around;
+}
+.tit1{
+  position: absolute;
+  margin-left: 100rpx;
+  top: 50rpx;
+  color: white;
+  font-weight: 600;
+}
+.tit2{
+  position: absolute;
+  top: 100rpx;
+  margin-left: 100rpx;
+  color: white;
+  font-size: 24rpx;
+  font-weight: 600;
+}
+.newbook image{
+  width: 320rpx;
+  height: 210rpx;
+  border-radius: 30rpx;
+}
+.line{
+  width: 700rpx;
+  border-top: 4rpx solid rgb(138, 129, 129);
+  height: 6rpx;
+  position: relative;
+  top: 172rpx;
+}
+.classify{
+  width: 2em;
+  height: 1.5em;
+  padding:0 10rpx;
+  background-color: white;
+  position: relative;
+  top: 140rpx;
+  left: 300rpx;
+}
+/* .cate{
+    display: flex; 
+  justify-content: center;
+} */
+.classImg{
+  width: 100%;
+  position: relative;
+  top: -30rpx;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.classImg image{
+  width: 220rpx;
+  height: 200rpx;
+  margin-bottom: 20rpx; 
+  border-radius: 30rpx;
+} 
+.tit{
+  position: absolute;
+  margin: 10rpx;
+  color: white;
+  font-size: 32rpx;
+  font-weight: 600;
+}

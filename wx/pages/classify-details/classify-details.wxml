@@ -1,0 +1,16 @@
+<view class="container">  
+  <!-- 搜索按钮 -->  
+  <button bindtap="onButtonClick" data-category="文艺">搜索文艺类书籍</button>
+  <button bindtap="onButtonClick" data-category="神话">搜索神话类书籍</button>
+  <button bindtap="onButtonClick" data-category="心理">搜索心理类书籍</button>
+  <button bindtap="onButtonClick" data-category="小说">搜索小说类书籍</button>  
+  <!-- 书籍列表显示区域 -->  
+  <view class="book-list">  
+    <block wx:for="{{books}}" wx:key="id">  
+      <view class="book-item">  
+        <text>{{item.book_name}}</text>  
+        <text>作者：{{item.book_author}}</text>  
+      </view>  
+    </block>  
+  </view>  
+</view>

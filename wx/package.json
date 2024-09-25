@@ -1,0 +1,16 @@
+{
+  "name": "book-manage-master",
+  "version": "1.0.0",
+  "description": "微信小程序图书管理系统",
+  "main": "app.js",
+  "dependencies": {
+    "mysql2": "^3.11.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

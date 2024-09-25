@@ -1,0 +1,36 @@
+<!--pages/desk/desk.wxml-->
+<view>
+  <!-- 图片 -->
+  <view class="img">
+    <image src="{{book[0].cover}}"></image>
+    <!-- 作者信息 -->
+    <view class="Amation">
+      <text>{{book[0].name}}</text>
+      <view class="author">{{book[0].author}}</view>
+      <view class="hot">1075人在读
+        <image class="right" src="/image/right.png"></image>
+      </view>
+    </view>
+  </view>
+  <!-- 详情与目录 -->
+  <view class="table">
+    <view class="item" bindtap="toItem">
+      <view class="{{show?'txt':''}}">详情</view>
+    </view>
+    <view class="list" bindtap="toList">
+      <view class="{{show?'':'txt'}}">目录</view>
+    </view>
+  </view>
+  <!-- 对应信息 -->
+  <view class="info">
+    <text wx:if="{{show}}">{{book[0].desc}}</text>
+    <view class="des" wx:else >
+      <view class="minList" wx:for="{{book[0].dir}}" wx:key="index">{{item}}</view>
+    </view>
+  </view>
+  <!-- 按钮 -->
+  <view class="btns">
+    <view bindtap="pushDesk" data-book="{{book[0]}}">{{deskToast?'加入书架':'移出书架'}}</view>
+    <view bindtap="reading">阅读</view>
+  </view>
+</view>

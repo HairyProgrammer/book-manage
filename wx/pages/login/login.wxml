@@ -1,0 +1,15 @@
+<!-- login.wxml -->  
+<view class="container">  
+  <form bindsubmit="formSubmit">  
+    <view class="form-item">  
+      <text class="label">用户名:</text>  
+      <input type="text" class="input" name="username" placeholder="请输入用户名" />  
+    </view>  
+    <view class="form-item">  
+      <text class="label">密码:</text>  
+      <input type="password" class="input" name="password" placeholder="请输入密码" />  
+    </view>  
+    <button formType="submit" class="btn-login">登录</button>  
+  </form>  
+  <button bindtap="goToRegister" class="btn-register">注册</button>  
+</view>

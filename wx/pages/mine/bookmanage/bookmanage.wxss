@@ -1,0 +1,54 @@
+/* pages/mine/bookmanage/bookmanage.wxss */
+.con{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.book{
+  position: relative;
+  width: calc(100% - 64rpx);
+  height: 320rpx;
+  border:1rpx solid #b5d2fe;
+  margin-top: 32rpx;
+}
+.book-content{
+  padding: 0 32rpx;
+}
+.book-content view{
+  margin: 10rpx;
+  font-size: 28rpx;
+}
+.txt{
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.btns{
+  width: calc(100% - 84rpx) ;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.btns view{
+  width: 6ex;
+  height: 3ex;
+  margin: 0;
+  background-color: #fff;
+  font-size: 32rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10rpx;
+}
+.btns view:nth-of-type(1){
+  border: 4rpx solid red;
+  color: red;
+}
+.btns view:nth-of-type(2){
+  border: 4rpx solid green;
+  color: green;
+}

@@ -1,0 +1,38 @@
+<!--pages/classify/classify.wxml  分类页面-->
+<view class="cover" wx:if="{{show==='true'}}">
+  <view class="coverSearch">
+    <input placeholder='请输入关键字' bindinput="Input" type="text" />
+    <text class="out" bindtap="hide">取消</text>
+    <navigator url="../classify-details/book/book?id={{item.book_id}}" class="res" bindtap="toDesk" wx:for="{{searchBook}}" wx:key="index" wx:if="{{showRes}}" data-id="{{item.book_id}}">{{searchBook[index].book_name}}</navigator>
+  </view>
+</view>
+<view wx:else>
+  <view class="container">
+    <!-- 搜索框文字图标 -->
+    <text bindtap="search" class="searchicon iconfont icon-search">搜索</text>
+    <!-- 扫码 -->
+    <text class="scan iconfont icon-scanning" bindtap="scanning"></text>
+    <!-- sao'ma -->
+    <view class="newbook">
+      <view wx:for="{{book.data1}}" wx:key='tit1'>
+        <text class="tit1">{{item.tit1}}</text>
+        <text class="tit2">{{item.tit2}}</text>
+        <image src="{{item.bigImg}}"></image>
+      </view>
+    </view>
+    <!-- 分割线 -->
+    <view>
+      <view class="line"></view>
+      <view class="classify">分类</view>
+    </view>
+  </view>
+  <!-- 分类页 -->
+  <view class="cate">
+    <view class="classImg">
+      <view bindtap="details" wx:for="{{book.data2}}" wx:key='tit' data-str="{{item.tit}}">
+        <text class="tit">{{item.tit}}</text>
+        <image src="{{item.bigImg}}"></image>
+      </view>
+    </view>
+  </view>
+</view>

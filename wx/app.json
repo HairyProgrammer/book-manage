@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/mine/mine",
+    "pages/read/read",
+    "pages/mine/booksAdd/booksAdd",
+    "pages/desk/desk",
+    "pages/classify/classify",
+    "pages/mine/bookmanage/bookmanage",
+    "pages/classify-details/classify-details",
+    "pages/logs/logs",
+    "pages/classify-details/book/book",
+    "pages/login/login",
+    "pages/register/register"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#b5d2fe",
+    "navigationBarTitleText": "电子书城",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#000000",
+    "list": [
+      {
+        "pagePath": "pages/read/read",
+        "text": "热门",
+        "iconPath": "./image/tab_icon1.png",
+        "selectedIconPath": "./image/tab_icon1_active.png"
+      },
+      {
+        "pagePath": "pages/classify/classify",
+        "text": "分类",
+        "iconPath": "./image/tab_icon2.png",
+        "selectedIconPath": "./image/tab_icon2_active.png"
+      },
+      {
+        "pagePath": "pages/desk/desk",
+        "text": "书库",
+        "iconPath": "./image/tab_icon3.png",
+        "selectedIconPath": "./image/tab_icon3_active.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "./image/tab_icon4.png",
+        "selectedIconPath": "./image/tab_icon4_active.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

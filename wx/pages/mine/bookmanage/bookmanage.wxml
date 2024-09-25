@@ -1,0 +1,16 @@
+<!--pages/mine/bookmanage/bookmanage.wxml-->
+<view class="con">
+    <view class="book"  wx:for="{{books}}" wx:key="id">
+        <view class="book-content">
+            <view>{{item.id}}</view>
+            <view>{{item.name}}</view>
+            <view>{{item.author}}</view>
+            <view class="txt">{{item.desc}}</view>
+            <view class="btns">
+                <view bindtap="removeBook" data-id="{{item.id}}" data-index="index">删除</view>
+                <view bindtap="writeBook"  data-id="{{item.id}}">编辑</view>
+            </view>
+        </view>
+    </view>
+</view>
+<!-- <view class="downReach" style="display:{{showLoad?'block':'none'}}">加载中...</view> -->

@@ -1,0 +1,57 @@
+<view>
+  <!-- 轮播图 -->
+  <view>
+    <swiper class="swiper1" autoplay indicator-dots circular="true">
+      <swiper-item>
+        <navigator>
+          <image src="../../image/img/book6.jpg" mode="widthFix" class="swiperImg"></image>
+        </navigator>
+      </swiper-item>
+      <swiper-item>
+        <navigator>
+          <image src="../../image/img/book7.jpg" mode="widthFix" class="swiperImg"></image>
+        </navigator>
+      </swiper-item>
+      <swiper-item>
+        <navigator>
+          <image src="../../image/img/book9.jpg" mode="widthFix" class="swiperImg"></image>
+        </navigator>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="book-image-list">  
+    <view class="book-image-item">  
+      <image src="../../image/img/photo1.jpg" class="book-image"></image>  
+    </view>  
+    <view class="book-image-item">  
+      <image src="../../image/img/book2.jpg" class="book-image"></image>  
+    </view>  
+    <view class="book-image-item">  
+      <image src="../../image/img/photo3.jpg" class="book-image"></image>  
+    </view>  
+    <view class="book-image-item">  
+      <image src="../../image/img/books1.png" class="book-image"></image>  
+    </view>  
+    <view class="book-image-item">  
+      <image src="../../image/img/book5.jpg" class="book-image"></image>  
+    </view>  
+    <view class="book-image-item">  
+      <image src="../../image/img/book6.jpg" class="book-image"></image>  
+    </view>  
+  </view>  
+</view>
+  <!-- 书籍 -->
+  <!--
+  <view class="container">
+    <view class="book-container" wx:for="{{book}}" wx:key="index" wx:if="{{index<num}}" data-id="{{item.id}}" bindtap="bookDetail"> 
+      <image src="{{item.cover}}"></image>
+      <view class="txt">
+        <view>书名：{{item.name}}</view>
+        <view>作者：{{item.author}}</view>
+        <view class="intro"><text>简介：</text><text>{{item.desc}}</text></view>
+      </view>
+    </view>
+  </view>
+  <view class="show" wx:if="{{show}}">加载中.....</view>
+</view>
+-->

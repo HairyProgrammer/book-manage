@@ -1,0 +1,18 @@
+<!-- pages/yourPage/yourPage.wxml -->  
+<view class="container">  
+  <view wx:for="{{books}}" wx:key="book_id" class="book-card">  
+    <text class="book-title" bindtap="toggleDetails" data-index="{{index}}">  
+      {{item.book_name}}  
+    </text>  
+
+    <!-- 显示其他书籍信息，只有当 isDetailsVisible 为 true 时显示 -->  
+    <view wx:if="{{item.isDetailsVisible}}">  
+      <text class="book-info">作者: {{item.book_author}}</text>  
+      <text class="book-info">出版社: {{item.book_press}}</text>  
+      <text class="book-info">价格: {{item.book_price}}元</text>  
+      <text class="book-info">ISBN: {{item.book_isbn}}</text>  
+      <text class="book-info">状态: {{item.book_status == '0' ? '可借' : '不可借'}}</text>  
+      <text class="book-info">上传时间: {{item.book_uploadtime}}</text>  
+    </view>  
+  </view>  
+</view>

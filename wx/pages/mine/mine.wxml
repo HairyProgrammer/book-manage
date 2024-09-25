@@ -1,0 +1,28 @@
+<!-- pages/mine/mine.wxml -->  
+<view>  
+  <view class="pag">  
+    <!-- 编辑（如果需要的话，可以添加点击事件或隐藏） -->  
+    <view class="write" bindtap="editProfile">编辑</view>  
+    <!-- 个人信息 -->  
+    <view class="info">  
+      <!-- 头像 -->  
+      <image src="{{userInfo.avatarUrl || '../../image/img/book11.jpg'}}"></image>  
+      <!-- 用户名 -->  
+      <view class="userName">{{userInfo.nickName || '用户名'}}</view>  
+      <view class="timMon">  
+        <!-- 读书时长和蜗牛壳等信息的显示 -->  
+        <!-- ... -->  
+      </view>  
+    </view>  
+  </view>  
+  <view class="bookManage">  
+    <button class="manage iconfont" bindtap="toManage">图书管理</button>  
+    <button class="release iconfont" bindtap="toRelease">图书发布</button>  
+    <!-- 授权登录按钮，根据登录状态显示 -->  
+    <block wx:if="{{!isAuthorized}}">  
+      <button class="manage iconfont" bindtap="getUserProfile">授权登录</button>  
+    </block>  
+    <button class="release iconfont" open-type="share">分享好友</button>  
+    <button class="manage iconfont" open-type="contact">联系客服</button>  
+  </view>  
+</view>

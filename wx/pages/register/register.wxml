@@ -1,0 +1,23 @@
+<view class="container">  
+  <form bindsubmit="submitForm">  
+  
+    <view class="form-group"> 
+      <label for="username">用户名：</label>  
+      <input type="text" id="username" name="username" placeholder="请输入用户名" />  
+    </view>  
+  
+    <view class="form-group">  
+      <label for="password">密码：</label>  
+      <input type="password" id="password" name="password" placeholder="请输入密码" />  
+    </view>  
+  
+    <view class="form-group">  
+  <label>身份：</label>  
+  <picker mode="selector" range="{{roleOptions}}" bindchange="bindRoleChange">  
+    <view class="picker">{{selectedRole || '请选择身份'}}</view>  
+  </picker>  
+</view>
+  
+    <button form-type="submit">提交注册信息</button>  
+  </form>  
+</view>

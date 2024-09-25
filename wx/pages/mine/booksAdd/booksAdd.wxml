@@ -1,0 +1,43 @@
+<view class="container">  
+  <form bindsubmit="submitForm">  
+    <view class="form-item">  
+      <label>书名：</label>  
+      <input type="text" name="book_name" placeholder="请输入书名" />  
+    </view>  
+    <view class="form-item">  
+      <label>类别：</label>  
+      <input type="text" name="book_category" placeholder="请输入类别" />  
+    </view> 
+    <view class="form-item">  
+      <label>ISBN：</label>  
+      <input type="text" name="book_isbn" placeholder="请输入ISBN" />  
+    </view>  
+    <view class="form-item">  
+      <label>出版社：</label>  
+      <input type="text" name="book_press" placeholder="请输入出版社" />  
+    </view>  
+    <view class="form-item">  
+      <label>作者：</label>  
+      <input type="text" name="book_author" placeholder="请输入作者" />  
+    </view>  
+    <view class="form-item">  
+      <label>页数：</label>  
+      <input type="number" name="book_pagination" placeholder="请输入页数" />  
+    </view>  
+    <view class="form-item">  
+      <label>价格：</label>  
+      <input type="number" name="book_price" placeholder="请输入价格" />  
+    </view>  
+    <view class="form-item">  
+      <label>上传时间：</label>  
+      <input type="date" name="book_uploadtime" placeholder="请选择上传时间" />  
+    </view>  
+    <view class="form-item">  
+      <label>状态：</label>  
+      <picker mode="selector" range="{{statusOptions}}" name="book_status" bindchange="bindStatusChange">  
+        <view class="picker">{{selectedStatus || '请选择状态'}}</view>  
+      </picker>  
+    </view>  
+    <button form-type="submit">发布图书</button>  
+  </form>  
+</view>

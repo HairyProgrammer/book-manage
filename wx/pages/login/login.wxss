@@ -1,0 +1,62 @@
+/* login.wxss */  
+  
+.container {  
+  /* 容器样式 */  
+  padding: 20px;  
+  display: flex;  
+  flex-direction: column;  
+  align-items: center;  
+  background-color: #f8f8f8;  
+  height: 100vh;  
+  justify-content: center;  
+}  
+  
+.form-item {  
+  /* 表单项样式 */  
+  margin-bottom: 20px;  
+  width: 100%;  
+  max-width: 300px;  
+}  
+  
+.label {  
+  /* 标签样式 */  
+  display: block;  
+  margin-bottom: 5px;  
+  color: #333;  
+}  
+  
+.input {  
+  /* 输入框样式 */  
+  width: 100%;  
+  padding: 10px;  
+  box-sizing: border-box;  
+  border: 1px solid #ccc;  
+  border-radius: 5px;  
+  font-size: 16px;  
+}  
+  
+.btn-login {  
+  /* 登录按钮样式 */  
+  width: 100%;  
+  max-width: 300px;  
+  background-color: #007aff;  
+  color: #fff;  
+  border: none;  
+  border-radius: 5px;  
+  padding: 10px;  
+  font-size: 16px;  
+  margin-top: 20px;  
+}  
+  
+.btn-register {  
+  /* 注册按钮样式 */  
+  width: 100%;  
+  max-width: 300px;  
+  background-color: #ff5722;  
+  color: #fff;  
+  border: none;  
+  border-radius: 5px;  
+  padding: 10px;  
+  font-size: 16px;  
+  margin-top: 10px; /* 与登录按钮稍微拉开一点距离 */  
+}

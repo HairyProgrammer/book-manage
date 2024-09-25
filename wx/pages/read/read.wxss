@@ -1,0 +1,55 @@
+.swiper1,swiper-item{
+  width: 100%;
+  height: 300rpx;
+}
+.swiperImg{
+  width: 100%;
+  height: 300rpx !important;
+}
+.container{
+  margin:32rpx;
+  padding: 0;
+}
+.book-container{
+  width:100% ;
+  display: flex;
+  margin-bottom: 32rpx;
+}
+.book-container>image{
+  width: 200rpx;
+  height: 300rpx;
+}
+.txt{
+  width: calc(100% - 200rpx);
+  height: 300rpx;
+  padding: 32rpx;
+  box-sizing: border-box;
+}
+.txt>view{
+  margin-bottom:12rpx;
+  font-size:32rpx
+}
+.intro>text:nth-child(2){
+  width: 100%;
+  margin-top: 10rpx;
+  font-size: 30rpx;
+  color: rgb(150, 141, 141);
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.book-image {  
+  width: 185px; /* 设置图片的宽度 */  
+  height: 150px; /* 保持图片的原始宽高比 */  
+} 
+.book-image-list {  
+  display: grid;  
+  grid-template-columns: repeat(2, 1fr); /* 始终两列 */  
+  grid-template-rows: repeat(3, 1fr); /* 始终三行 */  
+  gap: 20px;  
+}  
+

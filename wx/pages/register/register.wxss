@@ -1,0 +1,67 @@
+/* container class for styling form */  
+.container {  
+  padding: 20rpx; /* 内边距 */  
+  background-color: #f9f9f9; /* 背景色 */  
+  border-radius: 10rpx; /* 圆角边框 */  
+  box-shadow: 0 2rpx 12rpx rgba(0, 0, 0, 0.1); /* 阴影效果 */  
+  margin: 20rpx; /* 外边距 */  
+}  
+
+/* styling for each form group */  
+.form-group {  
+  margin-bottom: 30rpx; /* 每个表单组的间距 */  
+}  
+
+/* label styling */  
+label {  
+  display: block; /* 块级显示，独占一行 */  
+  margin-bottom: 10rpx; /* 与输入框的间距 */  
+  font-size: 28rpx; /* 字体大小 */  
+  color: #333; /* 字体颜色 */  
+}  
+
+/* input and select styling */  
+input, select {  
+  width: 100%; /* 宽度占满父容器 */  
+  padding: 12rpx; /* 内边距 */  
+  border: 1rpx solid #ccc; /* 边框颜色 */  
+  border-radius: 5rpx; /* 圆角边框 */  
+  font-size: 28rpx; /* 字体大小 */  
+  box-sizing: border-box; /* 包含内边距和边框在宽度内 */  
+  background-color: #fff; /* 背景颜色 */  
+  display: block; /* 确保为块级元素 */  
+  margin-top: 10rpx; /* 与标签的间距 */  
+}
+
+/* styling for the submit button */  
+button {  
+  width: 100%; /* 宽度占满父容器 */  
+  padding: 12rpx; /* 内边距 */  
+  background-color: #007aff; /* 按钮背景色 */  
+  color: #ffffff; /* 按钮文字颜色 */  
+  border: none; /* 无边框 */  
+  border-radius: 5rpx; /* 圆角边框 */  
+  font-size: 28rpx; /* 字体大小 */  
+  cursor: pointer; /* 鼠标悬停时显示为指针 */  
+  margin-top: 10rpx; /* 与上方元素的间距 */  
+}  
+
+/* optional hover effect for button */  
+button:hover {  
+  background-color: #0056b3; /* 悬停时的背景色 */  
+}
+
+/* styling for the picker view */  
+.picker {  
+  width: 100%; /* 宽度占满父容器 */  
+  padding: 12rpx; /* 内边距 */  
+  border: 1rpx solid #ccc; /* 边框颜色 */  
+  border-radius: 5rpx; /* 圆角边框 */  
+  background-color: #fff; /* 背景颜色 */  
+  box-sizing: border-box; /* 包含内边距和边框在宽度内 */  
+  text-align: left; /* 文本对齐 */  
+  color: #333; /* 文字颜色 */  
+  height: 50rpx; /* 高度 */  
+  display: flex; /* 使用 flex 布局 */  
+  align-items: center; /* 垂直居中对齐 */  
+}
